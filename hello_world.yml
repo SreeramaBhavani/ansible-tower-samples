@@ -1,7 +1,5 @@
-- name: Hello World Sample
-  hosts: all
+- hosts: all
+  gather_facts: no
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
-
+    - name: Test connection
+      ping:
