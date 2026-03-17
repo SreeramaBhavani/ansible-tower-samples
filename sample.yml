@@ -1,8 +1,5 @@
 - hosts: all
   gather_facts: no
   tasks:
-    - name: Install python dependencies properly
-      raw: sudo apt update && sudo apt install -y python3 python3-six
-
     - name: Test connection
-      ping:
+      raw: echo "Connection Successful"
